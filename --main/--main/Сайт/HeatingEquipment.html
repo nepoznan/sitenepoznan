@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ООО "Отопительное оборудование"</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        ОТОПИТЕЛЬНОЕ<br> ОБОРУДОВАНИЕ
+      </div>
+      <div class="header__group">
+        <div class="header__nav">
+          <a href="#">Выгодно</a>
+          <a href="#">Услуги и товары</a>
+          <a href="#">Контакты</a>
+          <a href="#">Ещё</a>
+        </div>
+        <div class="header__contacts">
+          <div class="header__icons">
+            <span class="icon"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_142_923)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5658 0.477685C20.8364 0.362119 21.1327 0.322261 21.4237 0.362259C21.7147 0.402257 21.9898 0.52065 22.2204 0.705113C22.4509 0.889576 22.6286 1.13337 22.7348 1.41111C22.841 1.68885 22.8718 1.9904 22.8242 2.28435L20.3402 17.5699C20.0992 19.0444 18.5046 19.8899 17.1716 19.1555C16.0567 18.541 14.4007 17.5944 12.9112 16.6066C12.1664 16.1121 9.88503 14.5288 10.1654 13.4021C10.4064 12.4388 14.2397 8.8188 16.4302 6.66657C17.2899 5.82102 16.8978 5.33324 15.8826 6.11102C13.3613 8.04213 9.31331 10.9788 7.97493 11.8055C6.79427 12.5344 6.17874 12.6588 5.44274 12.5344C4.09998 12.3077 2.85469 11.9566 1.83831 11.5288C0.464885 10.951 0.531695 9.03546 1.83722 8.47768L20.5658 0.477685Z" fill="#0088CC"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_142_923">
+              <rect width="23" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              </span>
+            <span class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_142_925)">
+              <path d="M10.001 0C15.524 0 20.001 4.477 20.001 9.99999C20.001 15.523 15.524 20 10.001 20C8.23376 20.0028 6.49764 19.5352 4.97099 18.645L0.00499063 20L1.35699 15.032C0.466083 13.5049 -0.00196181 11.768 0.000990443 9.99999C0.000990443 4.477 4.47799 0 10.001 0ZM6.59299 5.3L6.39299 5.308C6.26351 5.31588 6.13697 5.3499 6.02099 5.408C5.91251 5.46943 5.81348 5.54622 5.72699 5.636C5.60699 5.749 5.53899 5.847 5.46599 5.942C5.09611 6.4229 4.89696 7.01331 4.89999 7.62C4.90199 8.10999 5.02999 8.58699 5.22999 9.03299C5.63899 9.93499 6.31199 10.89 7.19999 11.775C7.41399 11.988 7.62399 12.202 7.84999 12.401C8.95337 13.3725 10.2682 14.073 11.69 14.447L12.258 14.534C12.443 14.544 12.628 14.53 12.814 14.521C13.1052 14.506 13.3896 14.4271 13.647 14.29C13.7779 14.2225 13.9057 14.1491 14.03 14.07C14.03 14.07 14.073 14.042 14.155 13.98C14.29 13.88 14.373 13.809 14.485 13.692C14.568 13.606 14.64 13.505 14.695 13.39C14.773 13.227 14.851 12.916 14.883 12.657C14.907 12.459 14.9 12.351 14.897 12.284C14.893 12.177 14.804 12.066 14.707 12.019L14.125 11.758C14.125 11.758 13.255 11.379 12.723 11.137C12.6673 11.1127 12.6077 11.0988 12.547 11.096C12.4786 11.089 12.4094 11.0967 12.3442 11.1186C12.279 11.1405 12.2193 11.1761 12.169 11.223C12.164 11.221 12.097 11.278 11.374 12.154C11.3325 12.2098 11.2753 12.2519 11.2098 12.275C11.1442 12.2982 11.0733 12.3013 11.006 12.284C10.9408 12.2665 10.877 12.2445 10.815 12.218C10.691 12.166 10.648 12.146 10.563 12.11C9.98905 11.8595 9.45767 11.5211 8.98798 11.107C8.86198 10.997 8.74498 10.877 8.62498 10.761C8.23157 10.3842 7.88871 9.958 7.60499 9.49299L7.54599 9.39799C7.50361 9.33416 7.46935 9.2653 7.44399 9.19299C7.40599 9.04599 7.50499 8.92799 7.50499 8.92799C7.50499 8.92799 7.74799 8.66199 7.86099 8.51799C7.97099 8.37799 8.06398 8.24199 8.12398 8.14499C8.24198 7.955 8.27899 7.75999 8.21698 7.609C7.93699 6.925 7.64699 6.244 7.34899 5.568C7.28999 5.434 7.11499 5.338 6.95599 5.319C6.90199 5.313 6.84799 5.307 6.79399 5.303C6.65969 5.29632 6.52512 5.29766 6.39099 5.307L6.59299 5.3Z" fill="#14AF25"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_142_925">
+              <rect width="20.001" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              </span>
+          </div>
+          <span class="divider"></span>
+          <a href="tel:+79991234567" class="header__phone">+7 (999) 123-45-67</a>
+        </div>
+      </div>
+      <a href="#header__btn" class="header__btn">Обратный звонок</a>
+        <div id="header__btn" class="modal-unique">
+          <div class="modal-content-unique">
+            <div class="modal-unique-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Заказать обратный звонок</h2>
+            <form>
+              <div class="dannie">
+                <div class="imya">
+                  <label for="name-unique" class="name">Имя</label>
+                  <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                </div>
+                <div class="telefon">
+                  <label for="phone-unique" class="phone">Номер телефона*</label>
+                  <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                </div>
+              </div>
+              <div class="otpravit">
+              <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+              <a href="#successModal" class="modal-link">Отправить</a>
+              </div>
+            </form>
+           </div>
+          </div>
+        </div>
+        <div id="successModal" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2 class="modal-title">Успешно отправлено!</h2>
+          <div class="mdl">
+            <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+            <a href="#" class="modal-button">Закрыть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="content">
+      <div class="content__container">
+        <div class="content__text">
+          <h1 class="content__title">
+            Установка и обслуживание <br>
+            <span class="content__highlight">отопительного оборудования</span> в Москве
+          </h1>
+          <div class="content__features">
+            <div class="feature">Профессионализм</div>
+            <div class="feature">Честность</div>
+            <div class="feature">Открытость</div>
+            <div class="feature">Инновационность</div>
+          </div>
+          <a href="#header__btn" class="content__btn">Оставить заявку</a>
+        <div id="header__btn" class="modal-unique">
+          <div class="modal-content-unique">
+            <div class="modal-unique-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Заказать обратный звонок</h2>
+            <form>
+              <div class="dannie">
+                <div class="imya">
+                  <label for="name-unique" class="name">Имя</label>
+                  <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                </div>
+                <div class="telefon">
+                  <label for="phone-unique" class="phone">Номер телефона*</label>
+                  <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                </div>
+              </div>
+              <div class="otpravit">
+              <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+              <a href="#successModal" class="modal-link">Отправить</a>
+              </div>
+            </form>
+           </div>
+          </div>
+        </div>
+        <div id="successModal" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2 class="modal-title">Успешно отправлено!</h2>
+          <div class="mdl">
+            <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+            <a href="#" class="modal-button">Закрыть</a>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="content__image">
+          <img src="images/boiler.png" alt="Отопительное оборудование">
+        </div>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="promo__left">
+        <h2 class="promo__title">Скидка на первый заказ!</h2>
+        <p class="promo__description">Дарим скидку 10% на первый заказ через сайт</p>
+        <a href="#header__btn" class="promo__btn">Заказать услугу</a>
+        <div id="header__btn" class="modal-unique">
+          <div class="modal-content-unique">
+            <div class="modal-unique-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>Заказать обратный звонок</h2>
+            <form>
+              <div class="dannie">
+                <div class="imya">
+                  <label for="name-unique" class="name">Имя</label>
+                  <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                </div>
+                <div class="telefon">
+                  <label for="phone-unique" class="phone">Номер телефона*</label>
+                  <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                </div>
+              </div>
+              <div class="otpravit">
+              <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+              <a href="#successModal" class="modal-link">Отправить</a>
+              </div>
+            </form>
+           </div>
+          </div>
+        </div>
+        <div id="successModal" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2 class="modal-title">Успешно отправлено!</h2>
+          <div class="mdl">
+            <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+            <a href="#" class="modal-button">Закрыть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="promo__right">
+        <img src="images/master2.png" alt="Мастер">
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__container">
+        <h2 class="services__title"><span class="content__highlight">Услуги и товары</span> нашей компании</h2>
+        <div class="services__list">
+          <div class="service">
+            <div class="service__content">
+              <div class="service__header">
+                <div class="service__name">Проектирование, монтаж,<br> сервисное обслуживание систем<br> отопления и водоснабжения</div>
+                <div class="service__price">от 50 000 руб</div>
+              </div>
+              <div class="service__body">
+                <div class="service__main">
+                  <ul class="service__features">
+                    <li>Проектирование</li>
+                    <li>Монтаж</li>
+                    <li>Сервисное обслуживание</li>
+                    <li>Любой масштаб</li>
+                  </ul>
+                  <div class="button__wrapper">
+                    <a href="#header__btn" class="service__btn">Заказать услугу</a>
+                      <div id="header__btn" class="modal-unique">
+                        <div class="modal-content-unique">
+                          <div class="modal-unique-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2>Заказать обратный звонок</h2>
+                          <form>
+                            <div class="dannie">
+                              <div class="imya">
+                                <label for="name-unique" class="name">Имя</label>
+                                <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                              </div>
+                              <div class="telefon">
+                                <label for="phone-unique" class="phone">Номер телефона*</label>
+                                <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                              </div>
+                            </div>
+                            <div class="otpravit">
+                            <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+                            <a href="#successModal" class="modal-link">Отправить</a>
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                      </div>
+                      <div id="successModal" class="modal">
+                        <div class="modal-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2 class="modal-title">Успешно отправлено!</h2>
+                        <div class="mdl">
+                          <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+                          <a href="#" class="modal-button">Закрыть</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service__image">
+                  <img src="images/service1.jpg" alt="Системы отопления">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__content">
+              <div class="service__header">
+                <div class="service__name">Установка<br> автоматики</div>
+                <div class="service__price">от 50 000 руб</div>
+              </div>
+              <div class="service__body">
+                <div class="service__main">
+                  <ul class="service__features">
+                    <li>Для систем водоснабжения</li>
+                    <li>Для отопления</li>
+                    <li>Для систем водоснабжения в частных домах</li>
+                    <li>Для систем водоснабжения в многоквартирных домах</li>
+                  </ul>
+                  <div class="button__wrapper">
+                    <a href="#header__btn" class="service__btn">Заказать услугу</a>
+                      <div id="header__btn" class="modal-unique">
+                        <div class="modal-content-unique">
+                          <div class="modal-unique-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2>Заказать обратный звонок</h2>
+                          <form>
+                            <div class="dannie">
+                              <div class="imya">
+                                <label for="name-unique" class="name">Имя</label>
+                                <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                              </div>
+                              <div class="telefon">
+                                <label for="phone-unique" class="phone">Номер телефона*</label>
+                                <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                              </div>
+                            </div>
+                            <div class="otpravit">
+                            <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+                            <a href="#successModal" class="modal-link">Отправить</a>
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                      </div>
+                      <div id="successModal" class="modal">
+                        <div class="modal-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2 class="modal-title">Успешно отправлено!</h2>
+                        <div class="mdl">
+                          <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+                          <a href="#" class="modal-button">Закрыть</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service__image">
+                  <img src="images/service2.jpg" alt="Системы отопления">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__content">
+              <div class="service__header">
+                <div class="service__name">Промывка систем<br> отопления</div>
+                <div class="service__price">от 50 000 руб</div>
+              </div>
+              <div class="service__body">
+                <div class="service__main">
+                  <ul class="service__features">
+                    <li>Качественно</li>
+                    <li>В день обращения</li>
+                    <li>В частных и многоквартирных<br> домах</li>
+                    <li>С помощью современного немецкого оборудования</li>
+                  </ul>
+                  <div class="button__wrapper">
+                    <a href="#header__btn" class="service__btn">Заказать услугу</a>
+                      <div id="header__btn" class="modal-unique">
+                        <div class="modal-content-unique">
+                          <div class="modal-unique-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2>Заказать обратный звонок</h2>
+                          <form>
+                            <div class="dannie">
+                              <div class="imya">
+                                <label for="name-unique" class="name">Имя</label>
+                                <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                              </div>
+                              <div class="telefon">
+                                <label for="phone-unique" class="phone">Номер телефона*</label>
+                                <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                              </div>
+                            </div>
+                            <div class="otpravit">
+                            <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+                            <a href="#successModal" class="modal-link">Отправить</a>
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                      </div>
+                      <div id="successModal" class="modal">
+                        <div class="modal-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2 class="modal-title">Успешно отправлено!</h2>
+                        <div class="mdl">
+                          <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+                          <a href="#" class="modal-button">Закрыть</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service__image">
+                  <img src="images/service3.jpg" alt="Системы отопления">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__content">
+              <div class="service__header">
+                <div class="service__name">Ремонт оборудования</div>
+                <div class="service__price">от 50 000 руб</div>
+              </div>
+              <div class="service__body">
+                <div class="service__main">
+                  <ul class="service__features">
+                    <li>Котлы</li>
+                  <li>Насосные станции</li>
+                  <li>Системы автоматики</li>
+                  <li>Иное оборудование</li>
+                  </ul>
+                  <div class="button__wrapper">
+                    <a href="#header__btn" class="service__btn">Заказать услугу</a>
+                      <div id="header__btn" class="modal-unique">
+                        <div class="modal-content-unique">
+                          <div class="modal-unique-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2>Заказать обратный звонок</h2>
+                          <form>
+                            <div class="dannie">
+                              <div class="imya">
+                                <label for="name-unique" class="name">Имя</label>
+                                <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                              </div>
+                              <div class="telefon">
+                                <label for="phone-unique" class="phone">Номер телефона*</label>
+                                <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                              </div>
+                            </div>
+                            <div class="otpravit">
+                            <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+                            <a href="#successModal" class="modal-link">Отправить</a>
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                      </div>
+                      <div id="successModal" class="modal">
+                        <div class="modal-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2 class="modal-title">Успешно отправлено!</h2>
+                        <div class="mdl">
+                          <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+                          <a href="#" class="modal-button">Закрыть</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service__image">
+                  <img src="images/service4.jpg" alt="Системы отопления">
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="service__wide">
+          <div class="service__content">
+            <div class="service__header__wide">
+              <div class="service__name">Продажа оборудования</div>
+              <div class="service__price">от 500 руб</div>
+            </div>
+            <div class="service__body__wide">
+              <div class="service__main__wide">
+                <ul class="service__features__wide">
+                  <li>Газовые котлы</li>
+                    <li>Электрические котлы</li>
+                    <li>Расходные материалы и комплектующие</li>
+                </ul>
+                <div class="button__wrapper__wide">
+                  <a href="#header__btn" class="service__btn__wide">Заказать оборудование</a>
+                      <div id="header__btn" class="modal-unique">
+                        <div class="modal-content-unique">
+                          <div class="modal-unique-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2>Заказать обратный звонок</h2>
+                          <form>
+                            <div class="dannie">
+                              <div class="imya">
+                                <label for="name-unique" class="name">Имя</label>
+                                <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                              </div>
+                              <div class="telefon">
+                                <label for="phone-unique" class="phone">Номер телефона*</label>
+                                <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                              </div>
+                            </div>
+                            <div class="otpravit">
+                            <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+                            <a href="#successModal" class="modal-link">Отправить</a>
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                      </div>
+                      <div id="successModal" class="modal">
+                        <div class="modal-content">
+                          <a href="#" class="modal-close">&times;</a>
+                          <h2 class="modal-title">Успешно отправлено!</h2>
+                        <div class="mdl">
+                          <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+                          <a href="#" class="modal-button">Закрыть</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="service__image__wide">
+                <img src="images/service5.png" alt="Системы отопления">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    </section> 
+    <section class="about-section">
+      <div class="container">
+        <h2 class="about-title">О <span class="content__highlight">компании</span></h2>
+        <div class="about-content">
+          <div class="slider-container">
+            <div class="slider">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <div class="slides">
+                <div class="slide">
+                  <img src="images/slide1.png" alt="Слайд 1">
+                </div>
+                <div class="slide">
+                  <img src="images/slide2.png" alt="Слайд 2">
+                </div>
+                <div class="slide">
+                  <img src="images/slide3.png" alt="Слайд 3">
+                </div>
+              </div>
+              <div class="navigation">
+                <label for="slide1" class="nav-dot"></label>
+                <label for="slide2" class="nav-dot"></label>
+                <label for="slide3" class="nav-dot"></label>
+              </div>
+            </div>
+          </div>
+          <div class="text">
+          <div class="about-text">
+            <p>Не каждый уделяет монтажу системы отопления достаточно внимания. Это приводит к отказам оборудования, проблемам с пуском в начале сезона и другим проблемам, которых можно избежать.</p>
+            <p>Составлением проекта, установкой и наладкой (всем, что связано с коммуникациями) должны заниматься исключительно профессионалы.</p>
+            <p>А проводить монтаж систем отопления квалифицированный персонал. Независимо от объекта.</p>
+            <p>Качественный монтаж, точно в срок. Мы исключили всех посредников, что бы предоставить одни из лучших цен. Квалифицированные славянские рабочие.</p>
+          </div>
+          <div class="about-counters">
+            <div class="counter">
+              <span class="counter-value">1998</span>
+              <span class="counter-label">год основания компании</span>
+            </div>
+            <div class="counter">
+              <span class="counter-value">12</span>
+              <span class="counter-label">квалифицированных<br> инженеров в команде</span>
+            </div>
+            <div class="counter">
+              <span class="counter-value">100</span>
+              <span class="counter-label">довольных клиентов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="work-steps-section">
+      <div class="work-steps-container">
+        <div class="work-steps-content">
+          <div class="work-steps-text">
+            <h2>Этапы работы с нами</h2>
+            <ol class="work-steps-list">
+              <li class="work-step-item">
+                <span class="work-step-heading">01. Созваниваемся и знакомимся</span>
+                <p class="work-step-description">Вы оставляете заявку любым удобным способом, наш менеджер свяжется с вами.</p>
+              </li>
+              <li class="work-step-item">
+                <span class="work-step-heading">02. Составляем смету</span>
+                <p class="work-step-description">Рассчитываем и согласовываем смету, готовим и подписываем договор.</p>
+              </li>
+              <li class="work-step-item">
+                <span class="work-step-heading">03. Выполняем работы</span>
+                <p class="work-step-description">Вы можете участвовать на любом этапе работы для личного контроля, а также будете получать ежедневные отчеты.</p>
+              </li>
+              <li class="work-step-item">
+                <span class="work-step-heading">04.Сдаем работы</span>
+                <p class="work-step-description">Осуществляем приемку-передачу. На этом этапе вы можете приглашать для проверки любых сторонних экспертов.</p>
+              </li>
+            </ol>
+            <a href="#header__btn" class="work-steps-button">Заказать услугу</a>
+              <div id="header__btn" class="modal-unique">
+                <div class="modal-content-unique">
+                  <div class="modal-unique-content">
+                  <a href="#" class="modal-close">&times;</a>
+                  <h2>Заказать обратный звонок</h2>
+                  <form>
+                    <div class="dannie">
+                      <div class="imya">
+                        <label for="name-unique" class="name">Имя</label>
+                        <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                      </div>
+                      <div class="telefon">
+                        <label for="phone-unique" class="phone">Номер телефона*</label>
+                        <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                      </div>
+                    </div>
+                    <div class="otpravit">
+                    <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+                    <a href="#successModal" class="modal-link">Отправить</a>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+              <div id="successModal" class="modal">
+                <div class="modal-content">
+                  <a href="#" class="modal-close">&times;</a>
+                  <h2 class="modal-title">Успешно отправлено!</h2>
+                <div class="mdl">
+                  <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+                  <a href="#" class="modal-button">Закрыть</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="work-steps-image">
+            <img src="images/worker.png" alt="Рабочий за столом">
+          </div>
+      </div>
+    </section>
+    <section class="team-section">
+      <div class="container__team">
+        <div class="team-section__row">
+          <h2 class="team-section__title">Наша<br><span class="content__highlight">команда</span></h2>
+          <div class="team-section__cards-wrapper">
+            <div class="team-section__list">
+              <article class="team-card">
+                <h3 class="team-card__name">Зарубин Андрей Андреевич <br><span class="member__position">Главный инженер</span></h3>
+                <p сlass="team-card__position"></p>
+                <img src="images/team1.jpg" alt="Фото сотрудника" class="team-card__image">
+              </article>
+              <article class="team-card">
+                <h3 class="team-card__name">Иванов Александр Викторович <br><span class="member__position">Заместитель главного инженера</span></h3>
+                <p сlass="team-card__position"></p>
+                <img src="images/team2.jpg" alt="Фото сотрудника" class="team-card__image">
+              </article>
+              <article class="team-card">
+                <h3 class="team-card__name">Волков Валентин Иванович <br><span class="member__position">Мастер-сметчик</span></h3>
+                <p сlass="team-card__position"></p>
+                <img src="images/team3.jpg" alt="Фото сотрудника" class="team-card__image">
+              </article>
+            </div>
+            <input type="checkbox" id="toggle-team" class="team-section__toggle">
+            <div class="team-section__extra">
+              <article class="team-card">
+                <h3 class="team-card__name">Зарубин Андрей Андреевич <br><span class="member__position">Главный инженер</span></h3>
+                <p class="team-card__position"></p>
+                <img src="images/team1.jpg" alt="Фото сотрудника" class="team-card__image">
+              </article>
+              <article class="team-card">
+                <h3 class="team-card__name">Иванов Александр Викторович <br><span class="member__position">Заместитель главного инженера</span></h3>
+                <p class="team-card__position"></p>
+                <img src="images/team2.jpg" alt="Фото сотрудника" class="team-card__image">
+              </article>
+              <article class="team-card">
+                <h3 class="team-card__name">Волков Валентин Иванович <br><span class="member__position">Мастер-сметчик</span></h3>
+                <p class="team-card__position"></p>
+                <img src="images/team3.jpg" alt="Фото сотрудника" class="team-card__image">
+              </article>
+            </div>
+            <label for="toggle-team" class="team-section__link"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-section">
+      <div class="container__reviews">
+        <h2 class="reviews-section__title">Отзывы и благодарности <span class="content__highlight">клиентов</span></h2>
+        <div class="reviews-section__content">
+          <div class="reviews-section__video">
+            <img src="images/video.jpg" alt="Видео отзыв" class="video-thumbnail">
+            <button class="video-play-btn"></button>
+            <p class="review-client">ООО «Агрокомплекс», владелец компании Сармат Алиев<br>
+              <span class="review-project">Проект: Промышленная система теплоснабжения</span></p>
+          </div>
+          <div class="reviews-section__testimonial">
+            <div class="review__right">
+            <div class="review">
+              <div class="testimonial-client">
+                <img src="images/man1.jpg" alt="Фото клиента" class="client-photo">
+              <h3 class="client-name">Александр Рыбаков<br><p class="client-project">Проект: Отопление загородного дома "под ключ"</p></h3> 
+            </div>
+            <p class="testimonial-text">«Компания выполнила работу на отличном уровне. Работники были профессиональны и внимательно относились к каждой детали. Результат работы полностью оправдал мои ожидания — теперь в доме очень комфортно и тепло. Спасибо за качественное выполнение услуг!»</p>
+          </div>
+            <div class="testimonial-attachments">
+              <img src="images/attachment1.jpg" alt="Приложение 1">
+              <img src="images/attachment2.jpg" alt="Приложение 2">
+              <img src="images/attachment2.jpg" alt="Приложение 3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review__navigation">
+        <label for="slide1" class="nav-dot"></label>
+        <label for="slide2" class="nav-dot"></label>
+        <label for="slide3" class="nav-dot"></label>
+      </div>
+    </section>
+    <section class="works-section">
+      <div class="container__works">
+        <h2 class="works-section__title">Выполненные <span class="content__highlight">работы</span></h2>
+        <div class="work-slider">
+          <input type="radio" name="work-slider" id="work-slide1" checked>
+          <input type="radio" name="work-slider" id="work-slide2">
+          <input type="radio" name="work-slider" id="work-slide3">
+          <div class="work-slider__slides">
+            <div class="work-slide">
+              <article class="work-card">
+                <img src="images/work1.jpg" alt="Работа 1" class="work-card__image">
+                <h3 class="work-card__title">Система воздушного отопления с автоматизацией и диспетчеризацией</h3>
+                <div class="work-card__details">
+                  <span class="location">Щелковский район</span>
+                  <span class="date">Май 2023 года</span>
+                </div>
+              </article>
+              <article class="work-card">
+                <img src="images/work2.jpg" alt="Работа 2" class="work-card__image">
+                <h3 class="work-card__title">Промышленная система теплоснабжения (VRF системы, канальные электрические нагреватели)</h3>
+                <div class="work-card__details">
+                  <span class="location">Мытищи</span>
+                  <span class="date">Ноябрь 2022 года</span>
+                </div>
+              </article>
+            </div>
+            <div class="work-slide">
+              <article class="work-card">
+                <img src="images/work1.jpg" alt="Работа 1" class="work-card__image">
+                <h3 class="work-card__title">Система воздушного отопления с автоматизацией и диспетчеризацией</h3>
+                <div class="work-card__details">
+                  <span class="location">Щелковский район</span>
+                  <span class="date">Май 2023 года</span>
+                </div>
+              </article>
+              <article class="work-card">
+                <img src="images/work2.jpg" alt="Работа 2" class="work-card__image">
+                <h3 class="work-card__title">Промышленная система теплоснабжения (VRF системы, канальные электрические нагреватели)</h3>
+                <div class="work-card__details">
+                  <span class="location">Мытищи</span>
+                  <span class="date">Ноябрь 2022 года</span>
+                </div>
+              </article>
+          </div>
+            <div class="work-slide">
+              <article class="work-card">
+                <img src="images/work1.jpg" alt="Работа 1" class="work-card__image">
+                <h3 class="work-card__title">Система воздушного отопления с автоматизацией и диспетчеризацией</h3>
+                <div class="work-card__details">
+                  <span class="location">Щелковский район</span>
+                  <span class="date">Май 2023 года</span>
+                </div>
+              </article>
+              <article class="work-card">
+                <img src="images/work2.jpg" alt="Работа 2" class="work-card__image">
+                <h3 class="work-card__title">Промышленная система теплоснабжения (VRF системы, канальные электрические нагреватели)</h3>
+                <div class="work-card__details">
+                  <span class="location">Мытищи</span>
+                  <span class="date">Ноябрь 2022 года</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-slider__dots">
+        <label for="work-slide1" class="work-slider__dot"></label>
+        <label for="work-slide2" class="work-slider__dot"></label>
+        <label for="work-slide3" class="work-slider__dot"></label>
+      </div>
+    </section>
+    <section class="certificates-section">
+      <div class="container__certificates">
+        <h2 class="certificates-section__title">
+          Сертификаты <span class="content__highlight">качества</span>
+        </h2>
+        <div class="certificates-section__content">
+          <div class="certificates-list">
+            <input type="radio" id="cert1" name="certificate" class="certificate-radio" checked>
+            <label for="cert1" class="certificate-item">
+              Сертификат официального дилера ZOTA
+              <span class="certificate-date">от 14 ноября 2019 года</span>
+            </label>
+            <input type="radio" id="cert2" name="certificate" class="certificate-radio">
+            <label for="cert2" class="certificate-item">
+              Сертификат официального дилера ТЕПЛОДАР
+              <span class="certificate-date">от 12 мая 2021 года</span>
+            </label>
+            <input type="radio" id="cert3" name="certificate" class="certificate-radio">
+            <label for="cert3" class="certificate-item">
+              Сертификат официального дилера СТЭН
+              <span class="certificate-date">от 2 апреля 2022 года</span>
+            </label>
+            <input type="checkbox" id="show-more-toggle" class="show-more-checkbox">
+            <div class="hidden-items">
+              <input type="radio" id="cert4" name="certificate" class="certificate-radio">
+              <label for="cert4" class="certificate-item">
+                Сертификат официального дилера ТЕПЛОДАР
+                <span class="certificate-date">от 2 апреля 2022 года</span>
+              </label>
+              <input type="radio" id="cert5" name="certificate" class="certificate-radio">
+              <label for="cert5" class="certificate-item">
+                Сертификат официального дилера СТЭН
+                <span class="certificate-date">от 2 апреля 2022 года</span>
+              </label>
+            </div>
+            <label for="show-more-toggle" class="show-more">Показать еще</label>
+          </div>
+          <div class="certificate-preview">
+            <img src="images/certificate.png" alt="Превью сертификата" class="certificate-preview__image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-text">
+          <h2 class="contact-title">Остались вопросы?</h2>
+          <p class="contact-description">
+            Мы готовы ответить на любой из них, оставьте свои данные и мы перезвоним.
+          </p>
+          <img src="images/formman.jpg" alt="Работа 3" class="contact-description-img">
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" id="name" class="form-input" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Номер телефона*</label>
+              <input type="tel" id="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <p class="form-privacy">
+              *Нажимая на кнопку, Вы соглашаетесь <br><span class="privacy-link">на обработку персональных данных</span>.
+            </p>
+              <a href="#successModal" class="open-modal-link">Отправить</a>
+              <div id="successModal" class="modal">
+                <div class="modal-content">
+                  <a href="#" class="modal-close">&times;</a>
+                  <h2 class="modal-title">Успешно отправлено!</h2>
+                  <div class="mdl">
+                  <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+                  <a href="#" class="modal-button">Закрыть</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="unique-contact-section">
+      <div class="unique-contact-container">
+        <h2 class="unique-contact-title"><span class="content__highlight">Связаться</span> с нами</h2>
+        <div class="unique-contact-info">
+          <div class="unique-contact-item">
+            <h3 class="unique-contact-subtitle">[Телефон]</h3>
+            <div class="unique-contact-description">
+              <a href="tel:+79991234567" class="unique-contact-link">+7 (999) 123-45-67</a>
+              <p class="unique-contact-time">Пн—пт: с 8:00 до 17:00</p>
+            </div>
+          </div>
+          <div class="unique-contact-item">
+            <h3 class="unique-contact-subtitle">[Соцсети]</h3>
+            <div class="unique-contact-description">
+              <div class="contact-icons">
+              <span class="icon"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_142_923)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5658 0.477685C20.8364 0.362119 21.1327 0.322261 21.4237 0.362259C21.7147 0.402257 21.9898 0.52065 22.2204 0.705113C22.4509 0.889576 22.6286 1.13337 22.7348 1.41111C22.841 1.68885 22.8718 1.9904 22.8242 2.28435L20.3402 17.5699C20.0992 19.0444 18.5046 19.8899 17.1716 19.1555C16.0567 18.541 14.4007 17.5944 12.9112 16.6066C12.1664 16.1121 9.88503 14.5288 10.1654 13.4021C10.4064 12.4388 14.2397 8.8188 16.4302 6.66657C17.2899 5.82102 16.8978 5.33324 15.8826 6.11102C13.3613 8.04213 9.31331 10.9788 7.97493 11.8055C6.79427 12.5344 6.17874 12.6588 5.44274 12.5344C4.09998 12.3077 2.85469 11.9566 1.83831 11.5288C0.464885 10.951 0.531695 9.03546 1.83722 8.47768L20.5658 0.477685Z" fill="#0088CC"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_142_923">
+                <rect width="23" height="20" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </span>
+              <span class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_142_925)">
+                <path d="M10.001 0C15.524 0 20.001 4.477 20.001 9.99999C20.001 15.523 15.524 20 10.001 20C8.23376 20.0028 6.49764 19.5352 4.97099 18.645L0.00499063 20L1.35699 15.032C0.466083 13.5049 -0.00196181 11.768 0.000990443 9.99999C0.000990443 4.477 4.47799 0 10.001 0ZM6.59299 5.3L6.39299 5.308C6.26351 5.31588 6.13697 5.3499 6.02099 5.408C5.91251 5.46943 5.81348 5.54622 5.72699 5.636C5.60699 5.749 5.53899 5.847 5.46599 5.942C5.09611 6.4229 4.89696 7.01331 4.89999 7.62C4.90199 8.10999 5.02999 8.58699 5.22999 9.03299C5.63899 9.93499 6.31199 10.89 7.19999 11.775C7.41399 11.988 7.62399 12.202 7.84999 12.401C8.95337 13.3725 10.2682 14.073 11.69 14.447L12.258 14.534C12.443 14.544 12.628 14.53 12.814 14.521C13.1052 14.506 13.3896 14.4271 13.647 14.29C13.7779 14.2225 13.9057 14.1491 14.03 14.07C14.03 14.07 14.073 14.042 14.155 13.98C14.29 13.88 14.373 13.809 14.485 13.692C14.568 13.606 14.64 13.505 14.695 13.39C14.773 13.227 14.851 12.916 14.883 12.657C14.907 12.459 14.9 12.351 14.897 12.284C14.893 12.177 14.804 12.066 14.707 12.019L14.125 11.758C14.125 11.758 13.255 11.379 12.723 11.137C12.6673 11.1127 12.6077 11.0988 12.547 11.096C12.4786 11.089 12.4094 11.0967 12.3442 11.1186C12.279 11.1405 12.2193 11.1761 12.169 11.223C12.164 11.221 12.097 11.278 11.374 12.154C11.3325 12.2098 11.2753 12.2519 11.2098 12.275C11.1442 12.2982 11.0733 12.3013 11.006 12.284C10.9408 12.2665 10.877 12.2445 10.815 12.218C10.691 12.166 10.648 12.146 10.563 12.11C9.98905 11.8595 9.45767 11.5211 8.98798 11.107C8.86198 10.997 8.74498 10.877 8.62498 10.761C8.23157 10.3842 7.88871 9.958 7.60499 9.49299L7.54599 9.39799C7.50361 9.33416 7.46935 9.2653 7.44399 9.19299C7.40599 9.04599 7.50499 8.92799 7.50499 8.92799C7.50499 8.92799 7.74799 8.66199 7.86099 8.51799C7.97099 8.37799 8.06398 8.24199 8.12398 8.14499C8.24198 7.955 8.27899 7.75999 8.21698 7.609C7.93699 6.925 7.64699 6.244 7.34899 5.568C7.28999 5.434 7.11499 5.338 6.95599 5.319C6.90199 5.313 6.84799 5.307 6.79399 5.303C6.65969 5.29632 6.52512 5.29766 6.39099 5.307L6.59299 5.3Z" fill="#14AF25"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_142_925">
+                <rect width="20.001" height="20" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </span>
+              </div>
+              <p class="unique-contact-time">В любое время</p>
+            </div>
+          </div>
+          <div class="unique-contact-item">
+            <h3 class="unique-contact-subtitle">[Адрес]</h3>
+            <div class="unique-contact-description">
+              <p class="unique-contact-address">Московская область<br><span class="content__highlight">г. Видное, Бульвар Зелёные Аллеи, д. 11</span></p>
+              <p class="unique-contact-time">Пн—пт: с 8:00 до 17:00</p>
+            </div>
+          </div>
+        </div> 
+    </section>
+    <div class="unique-contact-map">
+      <iframe src="https://yandex.ru/map-widget/v1/?azimuth=0.2140689017399613&ll=37.709785%2C55.560682&mode=whatshere&whatshere%5Bpoint%5D=37.706782%2C55.560602&whatshere%5Bzoom%5D=17&z=17.48"
+          width="100%" height="500" frameborder="0"></iframe>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <p class="footer-top-title">ОТОПИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
+      <div class="footer-top-contacts">
+        <div class="footer-top-icons">
+        <span class="icon"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_142_923)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5658 0.477685C20.8364 0.362119 21.1327 0.322261 21.4237 0.362259C21.7147 0.402257 21.9898 0.52065 22.2204 0.705113C22.4509 0.889576 22.6286 1.13337 22.7348 1.41111C22.841 1.68885 22.8718 1.9904 22.8242 2.28435L20.3402 17.5699C20.0992 19.0444 18.5046 19.8899 17.1716 19.1555C16.0567 18.541 14.4007 17.5944 12.9112 16.6066C12.1664 16.1121 9.88503 14.5288 10.1654 13.4021C10.4064 12.4388 14.2397 8.8188 16.4302 6.66657C17.2899 5.82102 16.8978 5.33324 15.8826 6.11102C13.3613 8.04213 9.31331 10.9788 7.97493 11.8055C6.79427 12.5344 6.17874 12.6588 5.44274 12.5344C4.09998 12.3077 2.85469 11.9566 1.83831 11.5288C0.464885 10.951 0.531695 9.03546 1.83722 8.47768L20.5658 0.477685Z" fill="#0088CC"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_142_923">
+          <rect width="23" height="20" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          </span>
+        <span class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_142_925)">
+          <path d="M10.001 0C15.524 0 20.001 4.477 20.001 9.99999C20.001 15.523 15.524 20 10.001 20C8.23376 20.0028 6.49764 19.5352 4.97099 18.645L0.00499063 20L1.35699 15.032C0.466083 13.5049 -0.00196181 11.768 0.000990443 9.99999C0.000990443 4.477 4.47799 0 10.001 0ZM6.59299 5.3L6.39299 5.308C6.26351 5.31588 6.13697 5.3499 6.02099 5.408C5.91251 5.46943 5.81348 5.54622 5.72699 5.636C5.60699 5.749 5.53899 5.847 5.46599 5.942C5.09611 6.4229 4.89696 7.01331 4.89999 7.62C4.90199 8.10999 5.02999 8.58699 5.22999 9.03299C5.63899 9.93499 6.31199 10.89 7.19999 11.775C7.41399 11.988 7.62399 12.202 7.84999 12.401C8.95337 13.3725 10.2682 14.073 11.69 14.447L12.258 14.534C12.443 14.544 12.628 14.53 12.814 14.521C13.1052 14.506 13.3896 14.4271 13.647 14.29C13.7779 14.2225 13.9057 14.1491 14.03 14.07C14.03 14.07 14.073 14.042 14.155 13.98C14.29 13.88 14.373 13.809 14.485 13.692C14.568 13.606 14.64 13.505 14.695 13.39C14.773 13.227 14.851 12.916 14.883 12.657C14.907 12.459 14.9 12.351 14.897 12.284C14.893 12.177 14.804 12.066 14.707 12.019L14.125 11.758C14.125 11.758 13.255 11.379 12.723 11.137C12.6673 11.1127 12.6077 11.0988 12.547 11.096C12.4786 11.089 12.4094 11.0967 12.3442 11.1186C12.279 11.1405 12.2193 11.1761 12.169 11.223C12.164 11.221 12.097 11.278 11.374 12.154C11.3325 12.2098 11.2753 12.2519 11.2098 12.275C11.1442 12.2982 11.0733 12.3013 11.006 12.284C10.9408 12.2665 10.877 12.2445 10.815 12.218C10.691 12.166 10.648 12.146 10.563 12.11C9.98905 11.8595 9.45767 11.5211 8.98798 11.107C8.86198 10.997 8.74498 10.877 8.62498 10.761C8.23157 10.3842 7.88871 9.958 7.60499 9.49299L7.54599 9.39799C7.50361 9.33416 7.46935 9.2653 7.44399 9.19299C7.40599 9.04599 7.50499 8.92799 7.50499 8.92799C7.50499 8.92799 7.74799 8.66199 7.86099 8.51799C7.97099 8.37799 8.06398 8.24199 8.12398 8.14499C8.24198 7.955 8.27899 7.75999 8.21698 7.609C7.93699 6.925 7.64699 6.244 7.34899 5.568C7.28999 5.434 7.11499 5.338 6.95599 5.319C6.90199 5.313 6.84799 5.307 6.79399 5.303C6.65969 5.29632 6.52512 5.29766 6.39099 5.307L6.59299 5.3Z" fill="#14AF25"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_142_925">
+          <rect width="20.001" height="20" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          </span>
+        </div>
+        <a href="#header__btn" class="callback">Обратный звонок</a>
+            <div id="header__btn" class="modal-unique">
+              <div class="modal-content-unique">
+                <div class="modal-unique-content">
+                <a href="#" class="modal-close">&times;</a>
+                <h2>Заказать обратный звонок</h2>
+                <form>
+                  <div class="dannie">
+                    <div class="imya">
+                      <label for="name-unique" class="name">Имя</label>
+                      <input type="text" id="name-unique" name="name-unique" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="telefon">
+                      <label for="phone-unique" class="phone">Номер телефона*</label>
+                      <input type="tel" id="phone-unique" name="phone-unique" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                  </div>
+                  <div class="otpravit">
+                  <p class="modal-policy-unique">*Нажимая на кнопку, Вы соглашаетесь на <span class="personal">обработку <br>персональных данных</span></p>
+                  <a href="#successModal" class="modal-link">Отправить</a>
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+            <div id="successModal" class="modal">
+              <div class="modal-content">
+                <a href="#" class="modal-close">&times;</a>
+                <h2 class="modal-title">Успешно отправлено!</h2>
+              <div class="mdl">
+                <p class="modal-text">Мы уже получили заявку — наш специалист свяжется с Вами в течение 15 минут для подтверждения.</p>
+                <a href="#" class="modal-button">Закрыть</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#" class="footer-link">Политика конфиденциальности</a>
+      <p class="footer-credit">Сайт разработан <span class="footer-company">GRAMPUS</span></p>
+      <p class="footer-title">&copy;2024. ООО «Отопительное оборудование»</p>
+    </div>
+  </footer>
+</body>
+</html>
